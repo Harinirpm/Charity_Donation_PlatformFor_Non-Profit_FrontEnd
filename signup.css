@@ -1,0 +1,155 @@
+
+.ContactForm {
+    background: rgb(253, 253, 253);
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(2rem);
+    width: 600px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    margin-left: 90px; 
+  }
+  
+  .ContactForm:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    border-style: 3px solid;
+  }
+  
+
+  .ContactForm form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .ContactForm label {
+    margin-bottom: 8px; 
+  }
+  
+  .ContactForm input,
+  .ContactForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  .ContactForm button {
+    background-color: #007bff;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 180px;
+    float: left;
+  }
+  
+  .ContactForm button:hover {
+    background-color: #66f1e6;
+    color: #000;
+  }
+  
+  .ContactForm {
+    background-color: #96c5f7;
+    background-image: url('img3.png');
+    margin-top: 150px;
+    display: flex;
+  }
+  
+ 
+  @media screen and (max-width: 555px) {
+    .ContactForm {
+      width: 80%; 
+      margin-left: 0; 
+      backdrop-filter: none; 
+    }
+  
+    .ContactForm form {
+      padding: 10px; 
+    }
+  
+    .ContactForm button {
+      margin-left: 0; 
+    }
+  }
+  
+  
+  
+  .forgot {
+    margin-bottom: 10%;
+    margin-left: 50%;
+  }
+  
+  .signup-back {
+    background-color: #eb4747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('img3.png');
+  }
+  
+ 
+  .role-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  
+  .role-container label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+ 
+  .role-container select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+
+  .role-container select option {
+    font-size: 14px;
+  }
+  
+  .image-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  .name-adjust{
+   
+    float: left;
+    justify-content: flex-start;
+    text-align: start;
+
+
+  }
+  .moving-image {
+    animation: moveImage 10s linear infinite;
+    width: 100%;
+  }
+  
+  @keyframes moveImage {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

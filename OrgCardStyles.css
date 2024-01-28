@@ -1,0 +1,145 @@
+.fundcard,
+.orgcard {
+    margin: 4rem 6rem;
+    color: black;
+    /* transform: scale(0.3); */
+  }
+.fundcard h1,
+.orgcard h1 {
+    font-size: 3rem;
+  }
+.card1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .f-card,
+  .t-card {
+    width: 39%;
+    /* text-align: start; */
+    box-shadow: 1px 5px 20px 1px rgb(168, 168, 168);
+    background-color: rgb(252, 251, 251);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5rem 0.8rem;
+  }
+  .f-image,
+  .t-image {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 7px;
+  }
+  .f-image img,
+  .t-image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
+  }
+  .f-image:hover img, 
+  .t-image:hover img {
+    transform: scale(1.3);
+  }
+  .f-card h2,
+  .t-card h2{
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    padding: 0.4rem 0.2rem 0;
+    }
+    .f-card p,
+    .t-card p{
+        font-size: 20px;
+        padding: 0.4rem 1.2rem 3rem;
+        text-align: start;
+    }
+    .f-card .display-here,
+    .t-card .display {
+        text-decoration: none;
+        background-color: rgb(144, 195, 240);
+        box-shadow: 1px 5px 25px 1px rgb(202, 202, 202);
+        padding: 1rem 3rem;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: black;
+        text-align: center;
+        
+        
+      }
+
+      /* Add this to your OrgCardStyles.css file */
+
+.orgcard.animate {
+  /* Define your animation styles here */
+  /* For example, you can use CSS animations or transitions */
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.orgcard {
+  /* Define your initial styles here */
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
+}
+
+       @media screen and (max-width: 850px) {
+      .fundcard,
+       .orgcard{
+        margin:4rem 2rem;
+       }
+      
+       .card1 {
+       
+       flex-direction: column;
+      }
+      /* .card2 {
+       
+        flex-direction: column;
+       } */
+      .orgcard h1 {
+        padding: 10px 20px;
+        font-size: 30px;
+      }
+      .f-card h2,
+      .t-card h2{
+        padding: 5px 10px;
+      }
+      .f-card p,
+      .t-card p {
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+      }
+      .f-card,
+      .t-card{
+        width:100%;
+        margin-bottom: 1.5rem;
+
+      }
+      .f-card .display-here,
+      .t-card .display{
+        padding: 0.6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+     
+    
+    }
+      
+    @media screen and (max-width: 768px) {
+      .orgcard {
+        transform: translateY(30px); /* Adjust the translateY value for smaller screens */
+      }
+    }
+    
+    /* Media query for even smaller screens */
+    @media screen and (max-width: 480px) {
+      .orgcard {
+        transform: translateY(20px); /* Adjust the translateY value for even smaller screens */
+      }
+    }

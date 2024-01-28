@@ -1,0 +1,14 @@
+.orgtext2{
+    margin: 12.5rem 13rem;
+      box-shadow: 1px 5px 20px 0px rgb(199, 198, 198);
+      background-color: rgb(231, 38, 38);
+      width: 60%;
+      padding:20rem 5rem;
+      border-radius: 70px;
+      margin-left: 25%;
+  }
+  .title-name div{
+      margin: 4rem 13rem 15rem 12rem;
+      color: black;
+      justify-content: auto;
+  }
